@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 10028,
-  "expoServerNgrokUrl": "https://pd-iun.anonymous.weather-romi.exp.direct",
-  "packagerNgrokUrl": "https://packager.pd-iun.anonymous.weather-romi.exp.direct",
-  "ngrokPid": 10054,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }
