@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 import { LinearGradient } from "expo";
-import { Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import PropTypes from "prop-types";
 
 // export default class Weather extends Component {
@@ -28,37 +28,49 @@ const weatherCases = {
     colors: ["#00C6FB", "#005BEA"],
     title: "Raining",
     subtitle: "Take your umbrella",
-    icon: "ios-rainy"
+    icon: "weather-pouring"
   },
   Clear: {
     colors: ["#FEF253", "#FF7300"],
     title: "Sunny",
     subtitle: "Good to go outside",
-    icon: "ios-sunny"
+    icon: "weather-sunny"
   },
   Thunderstorm: {
     colors: ["#00ECBC", "#007ADF"],
     title: "Thunderstorm",
     subtitle: "Be careful",
-    icon: "ios-thunderstorm"
+    icon: "weather-lightning"
   },
   Clouds: {
     colors: ["#D7D2CC", "#304352"],
     title: "Clouds",
     subtitle: "Drink your coffee :)",
-    icon: "ios-cloudy"
+    icon: "weather-cloudy"
   },
   Snow: {
     colors: ["#7DE2FC", "#B9B6E5"],
     title: "Snowing",
     subtitle: "Do you wanna build a snowman? :)",
-    icon: "ios-snow"
+    icon: "weather-snowy"
   },
   Drizzle: {
     colors: ["#89F7FE", "#66A6FF"],
     title: "Drizzle",
     subtitle: "It's not that bad :)",
-    icon: "ios-rainy-outline"
+    icon: "weather-hail"
+  },
+  Haze: {
+    colors: ["#89F7FE", "#66A6FF"],
+    title: "Haze",
+    subtitle: "Wear a mask",
+    icon: "weather-windy"
+  },
+  Mist: {
+    colors: ["#D7D2CC", "#304352"],
+    title: "Mist",
+    subtitle: "Don't get wet !",
+    icon: "weather-fog"
   }
 };
 
@@ -69,7 +81,7 @@ function Weather({ weatherName, temp }) {
       style={styles.container}
     >
       <View style={styles.upper}>
-        <Ionicons
+        <MaterialCommunityIcons
           color="white"
           size={100}
           name={weatherCases[weatherName].icon}
