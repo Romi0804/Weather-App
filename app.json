@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "_romi",
+    "name": "Weather_romi",
     "slug": "weather_romi",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -24,6 +24,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
